@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>Git Tutorial for MacOS - Tutorials</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!--
+Ramayana CSS Template
+https://templatemo.com/tm-529-ramayana
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+              <div class="logo">
+                <a href="./Git_Home.html">Git Tutorial</a>
+              </div>
+            </header>
+
+            <!-- Page Heading -->
+            <div class="page-heading">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>Tutorials</h1>
+                    <p>In <i>this course</i>, you will learn about how to set up your GitHub account & repositories, download and upload your files as well as enjoy some cool Git commands on your terminal. The courses will consists of 5 tutorial parts as you have seen on the Home Page, from basic to advanced techniques and after that you can further develop Git by yourself or lookup for the Git documentation. Let's jump into the features <b>now</b>!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- GitHub Image -->
+            <section class="simple-post">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <img src="assets/images/GitHub.png" alt="GitHub">
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Download Git -->
+            <section class="page-heading">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <br>
+                    <h1>1. Download Git</h1>
+                    <p>You can download Git for MacOS <a href="https://git-scm.com/downloads" target="blank">here</a>.</p>
+                    <p>To download Homebrew for your terminal, click <a href="https://brew.sh" target="blank">here</a> or follow these steps:</p>
+                      <ul>
+                        <li>Open your Mac Terminal and copy this line: <br><i>
+                          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+                          </i>.</li>
+                        <li> After you have downloaded, type <b>git version</b> on the terminal <br>
+                          if it appears the version then it’s mean you have successfully download git.</li>
+                      </ul>
+                    <p>Your <b>terminal</b> should look like this:</p>
+                    <img src="assets/images/gitversion.png" alt="git version">
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- GitHub Account -->
+            <section class="page-heading">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <br>
+                    <h1>2. GitHub Account</h1>
+                    <br>
+                    <h2>Sign Up</h2>
+                    <p>You can create your own GitHub account <a href="https://github.com/join" target="blank">here</a>.</p>
+                    <br>
+                    <h2>Setting up your repository</h2>
+                    <br>
+                    <img src="assets/images/gitrepo.png" alt="git repository">
+                    <p>Click on the avatar of your top right corner --> choose <b>My Profile</b> --> choose <b>New</b>.</p>
+                    <img src="assets/images/newrepo.png" alt="git new repository">
+                    <p>Enter your repository name (you should include <i>.github.io</i> at the end).</p>
+                    <p>Choose <b>Public</b> --> Choose <b>Add a README file</b> --> Choose <b>Create repository</b>.</p>
+                    <p>You should have your own repository like this:</p>
+                    <img src="assets/images/githubrepo.png" alt="github repo">
+                    <p>To manage who can view or edit your repository, click on <b>Setting</b> --> Choose <b>Manage Access</b> --> <b>Invite a collaborator</b>.</p>
+                    <p>It should look like this:</p>
+                    <img src="assets/images/manageaccess.png" alt="manage access">
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Basic Commands -->
+            <section class="page-heading">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <br>
+                    <h1>3. Basic Git Commands</h1>
+                    <h2>Setting up your username and email address</h2>
+                    <p>To initialise your user data to the terminal, follow these steps:</p>
+                    <ul>
+                      <li>git config --global user.name “<i><b>Enter your username here</b></i>".<br>
+                      <span style="color:red">Remember to use the quotation mark.</span></li>
+                      <li>git config --global user.email <i><b>Enter your email here</b></i>.</li>
+                      <li>git config -l to check your confidential data.</li>
+                    </ul>
+                    <p>Your terminal should look like this:</p>
+                    <img src="assets/images/user.png" alt="username and email">
+                    <br>
+                    <br>
+                    <h2>git clone</h2>
+                    <p>For instance, <b>git clone</b> is used to create a repository folder on your local machine.</p>
+                    <p>Type <b>git clone <i>URL</i></b> in your terminal (the URL for the repository on your GitHub can be found in your <b>Profile</b> --> <b>Code</b>).</p>
+                    <img src="assets/images/clonelink.png" alt="git clone link">
+                    <p>Your terminal will execute these lines and create the same folder from your GitHub account:</p>
+                    <img src="assets/images/gitclone.png" alt="git clone">
+                    <p>On your Mac machines, open <b>Users</b>, the folder should appear there!</p>
+                    <br>
+                    <h2>cd</h2>
+                    <p><b>cd</b> is a command used to target the place/folder that you want to point at.</p>
+                    <p>On your terminal, type <b>cd <i>folder</i></b>.</p>
+                    <p><span style="color:red">Hint: </span>type <b>cd </b>in your terminal, then click <b>tab</b>, it should appears all the folders that is inside User, then choose the folder you want to be in.</p>
+                    <img src="assets/images/cd.png" alt="cd folder">
+                    <p>After success, it should appears like this:</p>
+                    <img src="assets/images/cdsuccess.png" alt="successfully cd">
+                    <p>To move back one level, type <b>cd ..</b></p>
+                    <img src="assets/images/cdbackward.png" alt="cd ..">
+                    <br>
+                    <p style="color:blue">To continue the tutorial, I would advise to use the <b>Visual Studio code</b> or any IDE that has terminal, for example: <b>Xcode</b> for better experiences.</p>
+                    <br>
+                    <h2>Uploading your local files to GitHub</h2>
+                    <p>This is the following <b>chain</b> of commands that you will always use to upload your codes:</p>
+                    <ul>
+                      <li>git add <b>Enter your file name</b></li>
+                      <li>git commit -m "<i>Enter your message here</i>"</li>
+                      <li>git push</li>
+                    </ul>
+                    <p>Now assume that you already have a file in your local repository folder and you want to upload it into GitHub. </p>
+                    <img src="assets/images/example1.png" alt="example 1">
+                    <br><br>
+                    <p>To upload your file, firstly, create a new terminal on your visual studio window:</p>
+                    <img src="assets/images/example2.png" alt="example 2">
+                    <br><br>
+                    <p>Then <b>cd</b> your git folder to get started.</p>
+                    <p> Now execute the above commands (using the example from this course): <br> 
+                        Git add git_tutor.txt <br>
+                        Git commit -m “Insert git_tutor.txt” <br>
+                        Git push <br>
+                    </p>
+                    <p style="color:red">Hint: You can use <b>git add .</b> to add all the files in that folder.</p>
+                    <img src="assets/images/example3.png" alt="example 3">
+                    <br><br>
+                    <p>Now go to your Github account, you would notice that your file was added into your repository:</p>
+                    <img src="assets/images/upload.png" alt="upload textfile to GitHub">
+                    <br><br>
+                    <p><span style="color:red">Tip: </span>Remember to save your files before pushing, else the file won’t be up-to-date</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Resolving conflicts -->
+            <section class="page-heading">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <br>
+                    <h1>4. Resolving Conflicts</h1>
+                    <p>Assume that you have just created a new file on your GitHub repository but it is not on your local machine yet:</p>
+                    <img src="assets/images/conflict1.png" alt="conflict 1">
+                    <br>
+                    <img src="assets/images/conflict2.png" alt="conflict 2">
+                    <br><br>
+                    <p>Now you create a file on your local machine with the same name and you can’t upload it into your GitHub:</p>
+                    <img src="assets/images/conflict3.png" alt="conflict 3">
+                    <br><br>
+                    <p style="color:red">What is happening here?</p>
+                    <p>Actually, the error means that git detect an overwriting issue, which can make the files corrupted and data might be loss. That is why the file cannot be pushed to GitHub.</p>
+                    <p>To address the problem, you can type <b>git pull</b> on your terminal.</p>
+                    <img src="assets/images/conflict4.png" alt="conflict 4">
+                    <br><br>
+                    <p>Now if you want to update your work from GitHub, click Accept Incoming Changes.</p>
+                    <img src="assets/images/conflict5.png" alt="conflict 5">
+                    <br><br>
+                    <p>You can see that the data in your local file has already been updated to the new data in your GitHub.</p>
+                    <p>After that, you can continue to edit and upload it again on your GitHub repository:</p>
+                    <img src="assets/images/conflict6.png" alt="conflict 6">
+                    <br><br>
+                    <p>The problem was successfully solved!</p>
+                    <img src="assets/images/conflict7.png" alt="conflict 7">
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Advanced Commands -->
+            <section class="page-heading">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <br>
+                    <h1>5. Advanced Git Commands</h1>
+                    <br>
+                    <h2>git pull</h2>
+                    <br>
+                    <p>Regarding the aforementioned issue, solving conflicts is only an alternative function of git pull.</p>
+                    <p>The main idea is to continually update your data, when you have a group project to do in the future and each member will definitely push different codes into the GitHub repository. </p>
+                    <p>The pivotal part here is to keep remind yourself to do <b>git pull</b> at the begining whenever you want to edit your project to make sure everything is on the same page!</p>
+                    <p>In conclusion, for the advanced part, the first thing to remember is <b>git pull</b> will always be your <span style="color:red" >initial command</span>when you open the terminal</p>
+                    <h2>git branch</h2>
+                    <p>You can imagine <b>branches</b> are similar to routes, we have many different ways to come to the same destinations.</p>
+                    <p>In Git, the most common branch is the <b>main</b> that we are currently use, for the other branches, you have to create by yourself.</p>
+                    <p>To view how many branches you have, type <b>git branch</b></p>
+                    <p>The green line indicates which branch you are currently on</p>
+                    <p>To create a new branch, type <b>git branch “<i>Enter your branch name here</i>"</b></p>
+                    <img src="assets/images/branch1.png" alt="branch 1">
+                    <br><br>
+                    <p>Now let’s create a file on <b>newbranch</b>, and try to upload it</p>
+                    <img src="assets/images/branch2.png" alt="branch 2">
+                    <br><br>
+                    <p>You can see that it doesn’t allow us to push the file, even though every code was executed </p>
+                    <p>The reason is that the newbranch we previously created was only in our local machine, it was not on GitHub yet</p>
+                    <p>To address the issue, type <b>git push origin newbranch</b></p>
+                    <img src="assets/images/branch3.png" alt="branch 3">
+                    <br><br>
+                    <p>Now go to your GitHub account, click on <b>Pull Request</b> --> Choose <b>Compare & pull request</b></p>
+                    <img src="assets/images/branch4.png" alt="branch 4">
+                    <br><br>
+                    <p>Choose <b>Create pull request</b>, you can also leave some comments there.</p>
+                    <img src="assets/images/branch5.png" alt="branch 5">
+                    <br><br>
+                    <p>Choose <b>Merge pull request</b> --> <b>Confirm Merge</b></p>
+                    <img src="assets/images/branch6.png" alt="branch 6">
+                    <br>
+                    <img src="assets/images/branch7.png" alt="branch 7">
+                    <br><br>
+                    <p>Now the file is in your GitHub repository as well as your new branch</p>
+                    <img src="assets/images/branch8.png" alt="branch 8">
+                    <br>
+                    <img src="assets/images/branch9.png" alt="branch 9">
+                    <br><br>
+                    <p>Now have a look at our file in VScode if we change from <b>newbranch</b> to <b>main</b></p>
+                    <img src="assets/images/branch10.png" alt="branch 10">
+                    <p>The file was deleted, because it is not in the main branch</p>
+                    <p><span style="color:red">Recommended: </span>save your files before checkout another branch in case of losing data. To track files or history of your project, you can use the <b>git commands</b> below!</p>
+                    <h2>git status</h2>
+                    <br>
+                    <p>You can use <b>git status</b> to check which <b>stage, branch or function</b>you are currently on in case you are lost</p>
+                    <img src="assets/images/gitstatus.png" alt="git status">
+                    <br><br>
+                    <h2>git log</h2>
+                    <br>
+                    <p>You can use <b>git log</b> to view your project's history</p>
+                    <img src="assets/images/gitlog.png" alt="git log">
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--Further Information and documentation-->
+            <section class="simple-post">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+						          <h2>Further Information</h2>
+                      <p>To have an overview about the tutorial course or the Git/GitHub, you can read more in <b>About</b> Page.</p>
+                      <br>
+                      <div class="primary-button">
+                        <a href="./Git_About.html">Read More</a>
+                      <br><br>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+						          <h2>Git Documentation</h2>
+                      <p>To discover more advanced features that are not listed in this course, you can go to this documentation link below!</p>
+                      <br>
+                      <div class="primary-button">
+                        <a href="https://git-scm.com/docs/gittutorial">Git Documentation</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Contact Form -->
+            <section class="contact-form">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <form id="contact" action="" method="post">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h1>Feedback Form</h1>
+                          <br>
+                          <fieldset>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <button type="submit" id="form-submit" class="button">Send Message</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </form> 
+                  </div>
+                  <div class="col-md-6">
+                    <div id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0636760432526!2d106.690886914991!3d10.729572262990295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University!5e0!3m2!1svi!2s!4v1607257307245!5m2!1svi!2s" width="450" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    <br>
+                    <p><i>Your feedback will be sent to the address which is shown in the map.</i></p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+      <!-- Sidebar -->
+        <div id="sidebar">
+
+          <div class="inner">
+
+            <!-- Search Box -->
+            <section id="search" class="alt">
+              <form method="get" action="#">
+                <input type="text" name="search" id="search" placeholder="Search..." />
+              </form>
+            </section>
+              
+            <!-- Menu -->
+            <nav id="menu">
+              <ul>
+                <li><a href="Git_Home.html">Home</a></li>
+                <li><a href="Git_About.html">About</a></li>
+                <li><a href="Git_Tutorials.html">Tutorials</a></li>
+                <li><a href="https://www.google.com" target="blank">Google</a></li>
+                <li>
+                  <span class="opener">Contact</span>
+                  <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100008654410527" target="blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/p/Bd48tCnl4k0/?igshid=15a6y5fzefrub" target="blank">Instagram</a></li>
+                    <li><a href="https://github.com/ajking02008" target="blank">GitHub Account</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Thank you -->
+            <div class="featured-posts">
+              <div class="heading">
+                <h2>Thanks for your support</h2>
+              </div>
+              <div class="owl-carousel owl-theme">
+                <a href="https://git-scm.com" target="blank">
+                  <div class="featured-item">
+                    <img src="assets/images/gitlogo.png" alt="git logo">
+                    <p>Git documentation for valuable commands and instructions for downloading the software to the devices! </p>
+                  </div>
+                </a>
+                <a href="https://code.visualstudio.com" target="blank">
+                  <div class="featured-item">
+                    <img src="assets/images/vscode.jpg" alt="visual studio code">
+                    <p>The IDE used in this course to execute the Mac terminal and very friendly platform to use when executing the codes!</p>
+                  </div>
+                </a>
+                <a href="https://www.w3schools.com" target="blank">
+                  <div class="featured-item">
+                    <img src="assets/images/w3school.jpg" alt="w3school">
+                    <p>Provide various explanations and assistances to build up the webpages: HTML, CSS & JavaScript commands</p>
+                  </div>
+                </a>
+                <a href="https://github.com" target="blank">
+                  <div class="featured-item">
+                    <img src="assets/images/githublogo.png" alt="GitHub logo">
+                    <p>The place to host the website and the supporting software that assists in sharing the codes to the public</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+              <p class="copyright">Designed by Nguyen Anh Duy
+              <br>Templates by <a rel="nofollow" href="https://www.free-css.com/free-css-templates/page260/ramayana">Ramayana - Template Mo</a></p>
+            </footer>           
+          </div>
+        </div>
+    </div>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+
+  </body>
+
+</html>
