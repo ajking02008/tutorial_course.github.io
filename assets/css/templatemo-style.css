@@ -149,6 +149,49 @@ section {
 	margin-bottom: 30px;
 }
 
+.main-banner2 .container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.main-banner2 .banner-content {
+	background-image: url(../images/feedback.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-banner2 .banner-content .banner-caption {
+    max-width: 1250px;
+	background-color: rgba(250,250,250,0.95);
+	margin: 50px;
+	padding: 50px;
+}
+
+.main-banner2 .banner-content .banner-caption h4 {
+	font-size: 38px;
+	font-weight: 700;
+	color: #31323a;
+	letter-spacing: 0.25px;
+	margin: 0px;
+}
+
+.main-banner2 .banner-content .banner-caption em {
+	font-style: normal;
+	color: #535ba0;
+}
+
+.main-banner2 .banner-content .banner-caption span {
+	font-size: 15px;
+    color: #aaaaaa;
+	letter-spacing: 0.5px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.main-banner2 .banner-content .banner-caption p {
+	margin-bottom: 30px;
+}
 
 /* Services */
 
